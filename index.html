@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manu R - Software Developer & Open Source Enthusiast</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Connect with Manu R - Software Developer and Open Source Enthusiast. Find links to LinkedIn, GitHub, Email, and Instagram.">
+    <meta name="keywords" content="Manu R, Software Developer, Open Source, Developer Portfolio, LinkedIn, GitHub">
+    <meta name="author" content="Manu R">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Manu R - Software Developer">
+    <meta property="og:description" content="Connect with Manu R - Software Developer and Open Source Enthusiast">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJsSURBVFhH7ZbLahRBFIb7FQQhK8HHyCoB8Y5XEF2ICyGQjRs3IjGom2wyLgQJuNSNvoHiQh0YRDSG6Z7p7umZ7p4Zv1N9qqu6e9JdPRMSEPzgp6vrnDr/OXVqumPb2lqhRfR1+PGPYIz+vfy4cUVRjM3TqrWrkOhgQsQrF3SYr6WVCfgBiw3kL4BEk2F1BSx87NL8WeOvyxCvRMBnD6+9iGvb37k0owV4tlx8eGueCQjsuvTiijz+HEC8tAAfQbjwAlD8qodGPJPGEEchevRQ56l1GcAlF1QEJi7NnwYQjoZiYfEiF47gXIDhNaJ3z9ymJEWH++bw/pW6Bzz/PvnS9XB+NktQqDPBiNv4LhgWXz6xw97Y4HHKqB/MUFxEoYc5xI0FDC0tqE9Tv84TmI5CQlgaE3wP2dxEBSbDwPzCQvxBhQVcRIEk9AtjNkwLBnJuv0oLXFpcROIkZzkoauMXFgjiQYMWABGOHr2SWIBFKCTAzZ/v3NZrHXCYTOWfOF0BHJ2fP+2IEU8sYBmPBWbTNPWFEMGjxwWc8G4uYK/fkcG+RA8fb1Vq9fM2nXIXsOVHowB2f58F4zGJKPR3dy4KiQSW1YZtwbZgm+KJ/wNMxkMMiPDhm2YC44k/e3EWLK8xV/rLLxAEKtT92J9OwjSJtDPp8yGKlPj0+cQfPvQHMOkOSCBQgdZBKIqiN3KrBYIFh2Ec9sYk1AJ7vZ6K4jFzBJG0bQsYY9QiCiIIQ1YxlEqH23qjSNg+YBU2BFGorUDXBRGGFIV/WjcmzJpNtP6ztbX1n2tj9gdeqV+ZuO8fjgAAAABJRU5ErkJggg==">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Helvetica Neue', sans-serif;
+            position: relative;
+            background-color: #000;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://i.pinimg.com/736x/78/be/44/78be4454ebc0d5a90e95de8b22be5f0f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(10px) brightness(0.7);
+            z-index: -2;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 80%;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(12px);
+            animation: fadeIn 1s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 35px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .profile img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #fff;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .bio {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link {
+            padding: 16px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            animation: fadeIn 1.4s ease-out;
+            backdrop-filter: blur(5px);
+        }
+
+        .link:hover {
+            transform: translateY(-2px) scale(1.01);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .link i {
+            font-size: 18px;
+            width: 24px;
+            margin-right: 12px;
+            text-align: center;
+        }
+
+        .link span {
+            flex: 1;
+            text-align: center;
+            margin-right: 36px;
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-top: 30px;
+            animation: fadeIn 1.4s ease-out;
+            animation-delay: 0.6s;
+        }
+
+        .footer i {
+            color: #ff4b4b;
+            margin: 0 3px;
+            animation: heartBeat 1.2s infinite;
+        }
+
+        .link:nth-child(1) { animation-delay: 0.2s; }
+        .link:nth-child(2) { animation-delay: 0.3s; }
+        .link:nth-child(3) { animation-delay: 0.4s; }
+        .link:nth-child(4) { animation-delay: 0.5s; }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            .link {
+                padding: 14px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://i.pinimg.com/736x/cc/81/0b/cc810b193893aa49f2e4dbf3460ad6c1.jpg" alt="Manu R">
+            <h1>Manu R</h1>
+            <p class="bio">Software Developer • Open Source Enthusiast</p>
+        </div>
+        <div class="links">
+            <a href="https://linkedin.com/in/manu-r-b08125219" class="link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/manu-r12" class="link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:manurajbhar12@gmail.com" class="link">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="https://www.instagram.com/manu_r_3/" class="link">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+        <div class="footer">
+            Made with <i class="fas fa-heart"></i> by Manu R
+        </div>
+    </div>
+</body>
+</html>
