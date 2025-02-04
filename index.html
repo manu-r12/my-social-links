@@ -45,6 +45,7 @@
             font-family: 'Helvetica Neue', sans-serif;
             position: relative;
             background-color: #000;
+            padding: 20px;
         }
 
         body::before {
@@ -58,7 +59,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            filter: blur(10px) brightness(0.7);
+            filter: blur(5px) brightness(0.7);
             z-index: -2;
         }
 
@@ -75,12 +76,12 @@
 
         .container {
             max-width: 450px;
-            width: 80%;
-            padding: 40px;
+            width: 100%;
+            padding: 30px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 24px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(10px);
             animation: fadeIn 1s ease-out;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -96,7 +97,7 @@
             height: 110px;
             border-radius: 50%;
             margin-bottom: 20px;
-            border: 3px solid rgba(255, 255, 255, 0.2);
+            border: 3px solid #fff;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             object-fit: cover;
             animation: fadeIn 1.2s ease-out;
@@ -104,14 +105,14 @@
 
         h1 {
             font-size: 26px;
-            color: #fff;
+            color: #333;
             letter-spacing: 0.5px;
             font-weight: 600;
             margin-bottom: 8px;
         }
 
         .bio {
-            color: rgba(255, 255, 255, 0.8);
+            color: #666;
             font-size: 15px;
             font-weight: 400;
             line-height: 1.6;
@@ -126,24 +127,24 @@
 
         .link {
             padding: 16px 24px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 14px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 50px;
             text-decoration: none;
-            color: #fff;
+            color: #333;
             font-weight: 500;
             font-size: 15px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             align-items: center;
             animation: fadeIn 1.4s ease-out;
-            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .link:hover {
             transform: translateY(-2px) scale(1.01);
-            background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            background: #f9f9f9;
         }
 
         .link i {
@@ -151,6 +152,7 @@
             width: 24px;
             margin-right: 12px;
             text-align: center;
+            color: #333;
         }
 
         .link span {
@@ -161,7 +163,7 @@
 
         .footer {
             text-align: center;
-            color: rgba(255, 255, 255, 0.7);
+            color: #666;
             font-size: 14px;
             margin-top: 30px;
             animation: fadeIn 1.4s ease-out;
@@ -181,10 +183,37 @@
 
         @media (max-width: 480px) {
             .container {
-                padding: 30px 20px;
+                padding: 20px;
+                margin: 0;
+                width: calc(100% - 40px);
             }
+
+            .profile img {
+                width: 90px;
+                height: 90px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .bio {
+                font-size: 14px;
+            }
+
             .link {
                 padding: 14px 20px;
+                font-size: 14px;
+            }
+
+            .link i {
+                font-size: 16px;
+                width: 20px;
+                margin-right: 10px;
+            }
+
+            .link span {
+                margin-right: 20px;
             }
         }
     </style>
